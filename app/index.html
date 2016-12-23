@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="festivalsApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Amsterdam Festivals</title>
+
+    <link rel="stylesheet" href="../src/css/main.css" />
+
+    <script src="../src/js/angular.min.js"></script>
+    <script src="../src/js/angular-route.min.js"></script>
+
+    <script src="app.js"></script>
+    <script src="festival-list/festival-list.module.js"></script>
+    <script src="festival-list/festival-list.component.js"></script>
+    <script src="festival-details/festival-details.module.js"></script>
+    <script src="festival-details/festival-details.component.js"></script>
+  </head>
+  <body ng-controller="FestivalListController">
+    <div class="container">
+      <div ng-view></div>
+    </div>
+
+  </body>
+</html>
